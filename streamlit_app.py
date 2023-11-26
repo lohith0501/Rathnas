@@ -19,6 +19,8 @@ def main():
     df_sales=pd.read_excel(".//Arcline_master_database.xlsx",
                                sheet_name="Sales")
 
+    st.set_page_config(page_title=None, page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items=None)
+
     # Calculate days for invoice from invoice date
     df_sales['Invoice_date']=pd.to_datetime(df_sales['Invoice_date'], format='%Y-%m-%d')
     today = datetime.now()
