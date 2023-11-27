@@ -265,8 +265,8 @@ def main():
     if selected_option=="Payment notifications":
         TWILIO_ACCOUNT_SID = "AC5ce82ec4312733d6cf6aa2bc6e72610c"
         TWILIO_AUTH_TOKEN = "cc7446cbdd0beebfff5d71e5cb204604"
-        TWILIO_PHONE_NUMBER = "+918095838485"
-        TWILIO_WHATSAPP_NUMBER = "+14155238886"  # Twilio's WhatsApp Sandbox number
+        TWILIO_PHONE_NUMBER = "whatsapp:+918095838485"
+        TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"  # Twilio's WhatsApp Sandbox number
 
         # Create Twilio client
         client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
